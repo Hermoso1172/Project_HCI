@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --darkBackground : rgba(0, 0, 0, 0.692);
+}
+.container{
+    display: flex;
+
+}
+
+nav{
+    width: 200px;
+    height: 100vh;
+    background-color: #6a9c89cc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+
+nav span{
+    color: #A1BE95;
+}
+
+.CompanyName{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+nav img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+nav button{
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 19px;
+}
+nav .active{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
+nav .logout{
+    margin-top: 150px;
+}
+
+nav .logout button{
+    width: 150px;
+    height: 40px;
+    background-color: #CC6A6C;
+    color: white;
+    border-radius: 25px;
+}
+
+article{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../images/Ground.jpg);
+    background-size: cover;
+    position: relative;
+}
+article::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+.logo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.picLogo img{
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+}
+.logoName{
+    position: relative;
+    color: white;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.bold{
+    font-weight: bold;
+}
+.time{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.times{
+    
+    flex-direction: column;
+    background-color: #D9D9D9;
+    width: 90%;
+    padding: 5px;
+    padding-left: 15px;
+    border-radius: 15px;
+    color: white;
+}
+
+.mainContainer{
+    height: 500px;
+
+    position: relative;
+    margin-top: 15px;
+ 
+    border: 1px solid transparent;
+}
+.dagdag{
+    justify-self: center;
+    border: 1px solid transparent;
+    width: 900px;
+    height: 450px;
+}
+/* .dagdag img{
+    width: 20px;
+    height: 20px;
+} */
+.dagdag .message{
+    color: white;
+    border: none;
+    background-color: #649151;
+}
+
+.dagdag .archive{
+    color: white;
+    border: none;
+    background-color: #CC6A6C;
+}
+
+.dagdag .BACK{
+    background-color: rgb(97, 189, 158);
+    color: white;
+    border: none;
+}
+
+.ewan{
+    justify-self: center;
+    border: 1px solid transparent;
+    width: 900px;
+    height: 460px;
+    margin-top: 20px;
+    background-color: white;
+}
+.profilePIC{
+    width: 165px;
+    height: 165px;
+    background-color: #A1BE95;
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+.profilePIC img{
+    align-self: center;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+}
+.buttonONtop {
+    justify-self: flex-end;
+    margin-bottom: -20px;
+    padding: 5px;
+}
+.buttonONtop button{
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+.TOP_details{
+    border-bottom: 1px solid black;
+    height: 180px;
+    margin-top: -145px;
+    display: flex;
+}
+
+.nameANDbuttons{
+    width: 700px;
+}
+
+.TOP_name{
+    margin-left: 160px;
+    margin-top: 30px;
+}
+
+.TOP_name h1{
+    font-size: 40px;
+}
+
+.TOP_name p{
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.TOP_name span{
+    font-weight: lighter;
+}
+
+.buttonsBellow{
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.buttonsBellow button{
+    font-size: 15px;
+    font-weight: bold;
+    background-color: none;
+    border: none;
+    margin-right: 10px;
+    padding: 6px;
+    cursor: pointer;
+}
+.notActive{
+    color: rgb(112, 112, 112);
+}
+.active{
+    background-color: #b5d3a8;
+    color: #415f34;
+    border-radius: 15px;
+}
+.favoriteAUTHOR{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.favoriteAUTHOR  p{
+    font-weight: bold;
+}
+.favoriteAUTHOR .name{
+    font-size: 12px;
+}
+.favoriteAUTHOR img{
+    margin: 10px;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+
+.bottom_details{
+    display: flex;
+}
+
+.left_details{
+    width: 450px;
+    height: 260px;
+    margin: 10px;
+    border-right: 1px solid black;
+}
+.personal{
+    display: flex;
+    align-items: center;
+}
+
+.personal p{
+    font-weight: bold;
+}
+
+.personal img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.personal_details{
+    width: 420px;
+    height: 100px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+.personal_details pre, .bio p{
+    margin-top: 10px;
+    font-size:15px;
+    font-weight: bold;
+}
+.personal_details span{
+    font-weight: lighter;
+}
+
+.bio{
+    width: 420px;
+    height: 110px;
+    padding: 10px;
+}
+
+.right_details{
+    display: flex;
+    width: 430px;
+    height: 255px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.aboutTHEbook{
+    width: 230px;
+    background-color: #649151;
+}
+
+.aboutTHEbook p{
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.aboutTHEbook pre{
+    margin-left: 10px;
+    color: white;
+}
+.pictures{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+   align-items: center;
+}
+.pictures p{
+    font-weight: bold;
+}
+.pictures img{
+    border: 5px dashed #649151;
+    height: 200px;
+    width: 150px;
+}
+
+.blackBackground{
+    width: 100%; 
+    height: 100%; 
+    position:absolute; 
+    background-color:var(--darkBackground); 
+    top:0; 
+    left:0; 
+    display:none
+}
+.popUP{
+    width: 500px; 
+    height: 350px; 
+    position:absolute; 
+    background-color: white; 
+    position:absolute; 
+    display:none;
+    top: 50%; 
+    left:50%; 
+    transform:translate(-50%,-50%);
+    flex-direction: column;
+}
+
+
+.popUP img{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    margin-top: 60px;
+    justify-self: center;
+}
+.close{
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.confirmation{
+    margin: 20px;
+    text-align: center;
+}
+.twoButtons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.twoButtons button{
+    width: 150px;
+    color: white;
+    height: 40px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.cancel{
+    background-color: rgb(97, 189, 158);
+}
+
+.removes{
+    background-color: #CC6A6C;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1s linear;
+    animation-iteration-count: 3;
+    position: absolute;
+}
+    
+    @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg);}
+    
+    }
