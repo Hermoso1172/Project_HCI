@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Room</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="account.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h1>Book Room</h1>
+        <div class="profile">
+            <img src="https://via.placeholder.com/80" alt="Profile Picture">
+            <h2>Sarah</h2>
+            <p>Duterte</p>
+            <hr>
+        </div>
+        <div class="menu">
+            <a href="discover.html"> <button class="text-btn">Discover</button> </a>
+            <a href="popular.html"><button class="text-btn">Popular</button> </a>
+            <a href="newrelease.html"><button class="text-btn">New Release</button> </a> 
+            <a href="savedbook.html"><button class="text-btn">Saved Books</button> </a>
+            <br><br><br><br>
+            <button class="account-btn">Account</button> </a>
+            <a href="logout.html"><button class="logout">Logout</button></a>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <h1>ACCOUNT SETTINGS</h1>
+       
+        <div class="cons">
+            <div class="personalInfo">
+                <h3>Personal Information</h3>
+                <div class="bday">
+                    <input type="date" name="" id="">
+                    <p>Birthday</p>
+                </div>
+
+                <div class="bday">
+                    <input type="text" name="" id="" placeholder="Male">
+                    <p>Gender</p>
+                </div>
+
+                <div class="bday">
+                    <input type="text" name="" id="" placeholder="Metro Manila">
+                    <p>Location</p>
+                </div>
+
+                <div class="profEDIT">
+                    <button type="button" onclick="editPersonal_info()">EDIT</button>
+                </div>
+
+            </div>
+
+            <div class="prof">
+
+                <div class="top">
+                    <div class="conte">
+                        <div class="picNmae">
+                            <img src="darkside.jpg" alt="">
+                            <h3>Sarah Duterte</h3>
+                        </div>
+                    </div>
+
+                    <div class="id">
+                        <p>User ID</p>
+                        <div class="IDnum">
+                        1
+                        </div>  
+                    </div>
+                </div>
+
+
+                <div class="bottom">
+                    <h4>Account Credentials</h4>
+                    <div class="mainBot">
+                        <div class="left">
+                            <label for="">Email</label>
+                            <br>
+                            <input type="email" name="" id="" placeholder="example@email.com">
+                            <br>
+                            <label for="">Phone number</label>
+                            <br>
+                            <input type="number" name="" id="" placeholder="+639389042134">
+                            <br>
+                            <label for="">Secondary email</label>
+                            <br>
+                            <input type="email" name="" id="" placeholder="2ndexample@email.com">
+                            <br>
+                        </div>
+
+                        <div class="right">
+                            <label for="">Secondary email</label>
+                            <br>
+                            <input type="email" name="" id="" placeholder="2ndexample@email.com">
+                            <br>
+                            <label for="">Face Recognition</label>
+                            <div class="buts">
+                                <img src="bringeroflight.jpg" alt="">
+                                <p>Not Registered</p>
+                            </div>
+
+                            <div class="lastBot">
+                                <button type="button" onclick="updateProf()">Update</button>
+                                <button type="button" onclick="changeProf()">Change Password</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+    <div class="editprofile" id="editprofile">
+        <h2>Update Personal Info</h2>
+        <div class="eds">
+            <div class="inputs">
+                <label for="">First Name</label><br>
+                <input type="text" name="" id="" placeholder="Type here ..."><br>
+                <label for="">Last Name</label><br>
+                <input type="text" name="" id="" placeholder="Type here ..."><br>
+                <label for="">Gender Name</label><br>
+                <input type="text" name="" id="" placeholder="Type here ..."><br>
+                <label for="">Location Name</label><br>
+                <input type="text" name="" id="" placeholder="Select Gender ..."><br>
+                <label for="">Birthday</label><br>
+                <input type="date" name="" id="" placeholder=""><br>
+            </div>
+
+            <div class="ups">
+                <div class="uplo">
+                    <img src="archiegreene.jpg" alt="">
+                </div>
+                <button>Upload Profile Picture...</button>
+            </div>
+        </div>
+
+        <div class="lowbot">
+            <a href=""><button class="cancel">CANCEL</button></a>
+            <a href=""><button class="update">UPDATE</button></a>
+        </div>
+    </div>
+
+    <div class="updateprofile" id="updateprofile">
+        <h2>Update Credentials</h2>
+        <div class="eds">
+            <div class="inputs">
+                <label for="">First Name</label><br>
+                <input type="text" name="" id="" placeholder="Type here ..."><br>
+                <label for="">Last Name</label><br>
+                <input type="text" name="" id="" placeholder="Type here ..."><br>
+                <label for="">Gender Name</label><br>
+                <input type="text" name="" id="" placeholder="Type here ..."><br>
+                
+            </div>
+
+            <div class="asd">
+                <div class="inputs">
+                    <label for="">Security  Question</label><br>
+                    <input type="text" name="" id="" placeholder="Type here ..."><br>
+                    <label for="">Answer</label><br>
+                    <input type="text" name="" id="" placeholder="Type here ..."><br>  
+                </div>
+            </div>
+        </div>
+
+        <div class="lowbot">
+            <a href=""><button class="cancel">CANCEL</button></a>
+            <a href=""><button class="update">UPDATE</button></a>
+        </div>
+    </div>
+
+    <div class="changeprofile" id="changeprofile">
+        <h2>Change Password</h2>
+        <div class="eds">
+            <div class="inputs">
+                <label for="">Old Password :</label><br>
+                <input type="password" name="" id="" placeholder="Type here ..."><br>
+                <label for="">New Password :</label><br>
+                <input type="password" name="" id="" placeholder="Type here ..."><br>
+                <label for="">Confirm New Password :</label><br>
+                <input type="password" name="" id="" placeholder="Type here ..."><br>
+                
+            </div>
+
+        </div>
+
+        <div class="lowbot">
+            <a href=""><button class="cancel">CANCEL</button></a>
+            <a href=""><button class="update">UPDATE</button></a>
+        </div>
+    </div>
+    <script>
+        let ads = document.getElementById('editprofile');
+        let adsa = document.getElementById('updateprofile');
+        let adsas = document.getElementById('changeprofile');
+
+        function editPersonal_info(){
+            ads.classList.add('pop');
+        }
+        function updateProf(){
+            adsa.classList.add('pop');
+        }
+
+        function changeProf(){
+            adsas.classList.add('pop');
+        }
+
+        
+    </script>
+</body>
+</html>
